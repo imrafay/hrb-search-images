@@ -13,9 +13,14 @@ function SearchBar({onSubmit}){
       };
 
     return (<div>
-        <form onSubmit={onSubmitForm}>
-            <input value={input} onChange={onChangeInput}/>
+        <section>
+        <form  className="flex justify-center" onSubmit={onSubmitForm} id="searchForm">
+            <input 
+            placeholder="Search"
+            className="border border-solid border-black rounded p-3 m-4" value={input} onChange={onChangeInput}/>
         </form>
+        </section>
+        
     </div>);
 }
 
